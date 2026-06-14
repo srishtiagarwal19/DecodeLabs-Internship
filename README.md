@@ -1,31 +1,90 @@
-# DecodeLabs Internship
+# Project 3 - AI Recommendation System
 
-This repository contains all projects completed during the DecodeLabs AI Internship.
+## Overview
 
-## Projects
+This project implements a simple content-based recommendation system using Python.
 
-### Project 1 - Rule-Based AI Chatbot
+The system takes user skills and interests as input, compares them with predefined technology career paths, calculates similarity scores, and recommends the most relevant roles.
 
-* Built using Python
-* Uses rule-based responses
-* Handles greetings, help, time, and exit commands
+This project demonstrates the core concepts of recommendation systems, including preference matching, similarity scoring, ranking, and filtering.
 
-### Project 2 - Data Classification Using AI
+---
 
-* Built using Python and Scikit-Learn
-* Uses the Iris Dataset
-* Implements K-Nearest Neighbors (KNN) Classification
-* Applies Feature Scaling using StandardScaler
-* Evaluates performance using Accuracy, Precision, Recall, and F1-Score
-* Includes Confusion Matrix Heatmap Visualization
-* Achieved 100% Accuracy on the test dataset
+## Features
 
-## Repository Structure
+* Accepts user skills/interests as input
+* Matches preferences using similarity logic
+* Calculates match percentages
+* Ranks recommendations based on relevance
+* Displays the top recommended career paths
+* Handles cases where no suitable match is found
 
-DecodeLabs-Internship
+---
+
+## Technologies Used
+
+* Python
+* VS Code
+
+---
+
+## Project Structure
+
+```
+Project-3_AI_Recommendation_System
 │
-├── Project-1-Rule-Based-Chatbot
-│
-└── AI_Project2_Classification
+├── recommender.py
+├── README.md
+└── screenshots
+```
 
-More projects will be added as the internship progresses.
+---
+
+## How It Works
+
+1. The user enters skills separated by commas.
+2. The system compares these skills with predefined skill sets for various technology roles.
+3. Similarity scores are calculated based on matching skills.
+4. Roles are ranked according to their scores.
+5. The top recommendations are displayed.
+
+---
+
+## Sample Input
+
+```
+python, sql, machine learning
+```
+
+## Sample Output
+
+```
+Top Recommendations:
+
+Data Scientist -> 60% Match
+AI Engineer -> 40% Match
+Data Analyst -> 40% Match
+```
+
+---
+
+## Concepts Demonstrated
+
+* Recommendation Systems
+* Content-Based Filtering
+* Similarity Matching
+* Pattern Recognition
+* Ranking and Sorting
+* User Preference Analysis
+
+---
+
+## Learning Outcomes
+
+Through this project, I learned how recommendation engines work, how user preferences can be mapped to relevant items, and how similarity-based logic can be used to generate personalized recommendations.
+
+---
+
+## Author
+
+Srishti Agarwal
