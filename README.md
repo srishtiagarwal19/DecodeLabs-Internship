@@ -1,56 +1,48 @@
-# DecodeLabs Internship
+# Project 4: OCR Text Recognition
 
-This repository contains all projects completed during the DecodeLabs AI Internship.
+## Objective
 
-## Projects
-
-### Project 1 - Rule-Based AI Chatbot
-
-* Built using Python
-* Uses rule-based responses
-* Handles greetings, help, time, and exit commands
-
-### Project 2 - Data Classification Using AI
-
-* Built using Python and Scikit-Learn
-* Uses the Iris Dataset
-* Implements K-Nearest Neighbors (KNN) Classification
-* Applies Feature Scaling using StandardScaler
-* Evaluates performance using Accuracy, Precision, Recall, and F1-Score
-* Includes Confusion Matrix Heatmap Visualization
-* Achieved high accuracy on the test dataset
-
-### Project 3 - AI Recommendation System
-
-* Built using Python
-* Implements a content-based recommendation system
-* Accepts user skills and interests as input
-* Matches preferences using similarity logic
-* Ranks recommendations based on relevance
-* Displays the most suitable technology career paths
-
-## Repository Structure
-
-DecodeLabs-Internship
-│
-├── Project-1-Rule-Based-Chatbot
-├── AI_Project2_Classification
-├── Project-3_AI_Recommendation_System
-└── README.md
+Build an Optical Character Recognition (OCR) system capable of extracting text from images using Python, OpenCV, and Tesseract OCR.
 
 ## Technologies Used
 
 * Python
-* Scikit-Learn
-* NumPy
-* Pandas
-* Matplotlib
-* VS Code
-* Git & GitHub
+* OpenCV
+* Tesseract OCR
+* Pytesseract
 
-## Author
+## Features
 
-**Srishti Agarwal**
+* Image preprocessing using grayscale conversion
+* Noise reduction using Gaussian Blur
+* Otsu thresholding
+* Text extraction using OCR
+* Bounding box generation around detected words
+* Confidence score calculation
+* Export extracted text to a file
 
+## Input
 
-More projects will be added as the internship progresses.
+An image containing text.
+
+## Output
+
+* Extracted text displayed in terminal
+* Bounding boxes around detected words
+* Confidence scores for each detected word
+* Saved text file (`output.txt`)
+* Processed image (`processed.jpg`)
+
+## Sample Result
+
+Detected Text:
+
+ARTIFICIAL INTELLIGENCE
+PROJECT 4
+HELLO WORLD
+
+Average OCR Confidence: 95%+
+
+## Conclusion
+
+The OCR system successfully extracts text from images with high accuracy and demonstrates the use of image preprocessing and machine learning-based text recognition.
